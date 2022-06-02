@@ -8,7 +8,7 @@ namespace Hazel {
 	public:
 		Application();
 		~Application();
-		
+
 		void Run();
 	};
 
