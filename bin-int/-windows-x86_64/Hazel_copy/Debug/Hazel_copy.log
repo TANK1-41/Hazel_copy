@@ -1,9 +1,8 @@
 ﻿  Application.cpp
-  Log.cpp
-C:\dev\Hazel_copy\Hazel_copy\src\Hazel\Log.h(17,42): warning C4251: 'Hazel::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Hazel::Log'
+C:\dev\Hazel_copy\Hazel_copy\src\Hazel\Events\ApplicationEvent.h(11,42): warning C4244: 'return': conversion from 'const unsigned int' to 'float', possible loss of data
+C:\dev\Hazel_copy\Hazel_copy\src\Hazel\Events\ApplicationEvent.h(12,43): warning C4244: 'return': conversion from 'const unsigned int' to 'float', possible loss of data
+C:\dev\Hazel_copy\Hazel_copy\src\Hazel\Log.h(18,42): warning C4251: 'Hazel::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Hazel::Log'
 C:\dev\Hazel_copy\Hazel_copy\vender\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-C:\dev\Hazel_copy\Hazel_copy\src\Hazel\Log.h(18,42): warning C4251: 'Hazel::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Hazel::Log'
+C:\dev\Hazel_copy\Hazel_copy\src\Hazel\Log.h(19,42): warning C4251: 'Hazel::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Hazel::Log'
 C:\dev\Hazel_copy\Hazel_copy\vender\spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
-  Generating Code...
-     Creating library ..\bin\-windows-x86_64\Hazel_copy\Hazel_copy.lib and object ..\bin\-windows-x86_64\Hazel_copy\Hazel_copy.exp
   Hazel_copy.vcxproj -> C:\dev\Hazel_copy\bin\-windows-x86_64\Hazel_copy\Hazel_copy.dll
