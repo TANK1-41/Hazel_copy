@@ -5,4 +5,7 @@
 /.vs/Hazel_copy
 /Sandbox/Sandbox.vcxproj.user
 /Hazel_copy/Hazel_copy.vcxproj.user
-
+/bin/-windows-x86_64/Hazel_copy
+/bin/-windows-x86_64/Sandbox
+/bin-int/-windows-x86_64/Hazel_copy
+/bin-int/-windows-x86_64/Sandbox
