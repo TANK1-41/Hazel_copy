@@ -1,3 +1,6 @@
 [submodule "Hazel_copy/vender/spdlog"]
 	path = Hazel_copy/vender/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Hazel_copy/vender/GLFW"]
+	path = Hazel_copy/vender/GLFW
+	url = https://github.com/TheCherno/glfw
