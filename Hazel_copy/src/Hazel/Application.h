@@ -5,25 +5,25 @@
 #include "Hazel/Events/ApplicationEvent.h"
 
 #include "Window.h"
-namespace Hazel {
+namespace Hazel
+{
 
-	class HAZEL_API Application
-	{
-	public:
-		Application();
-		~Application();
+    class HAZEL_API Application {
+    public:
+        Application();
+        ~Application();
 
-		void Run();
-		void OnEvent(Event& e);
-	private:
-		bool OnWindowClose(WindowCloseEvent& e);
+        void Run();
+        void OnEvent(Event &e);
 
-		std::unique_ptr<Window> m_Window;
-		bool m_running = true;
-	};
+    private:
+        bool OnWindowClose(WindowCloseEvent &e);
 
-	//TO be defined by client
-	Application* CreateApplication();
+        std::unique_ptr<Window> m_Window;
+        bool m_running = true;
+    };
 
-}
+    //TO be defined by client
+    Application *CreateApplication();
 
+}// namespace Hazel

@@ -4,41 +4,42 @@
 
 #include <GLFW/glfw3.h>
 
-namespace Hazel {
+namespace Hazel
+{
 
-	class WindowsWindow : public Window
-	{
-	public:
-		WindowsWindow(const WindowProps& props);
-		virtual ~WindowsWindow();
+    class WindowsWindow : public Window {
 
-		void OnUpdate() override;
+    public:
+        WindowsWindow(const WindowProps &props);
+        virtual ~WindowsWindow();
 
-		inline unsigned int GetWidth() const override { return m_Data.Width; }
-		inline unsigned int GetHeight() const override { return m_Data.Height; }
+        void OnUpdate() override;
 
-		// Window attributes
-		inline void SetEventCallback(const EventCallbackFn& callback) override { m_Data.EventCallback = callback; }
-		void SetVSync(bool enabled) override;
-		bool IsVSync() const override;
-	private:
-		virtual void Init(const WindowProps& props);
-		virtual void Shutdown();
-	private:
-		GLFWwindow* m_Window;
+        inline unsigned int GetWidth() const override { return m_Data.Width; }
+        inline unsigned int GetHeight() const override { return m_Data.Height; }
 
-		//used to pass data around about window so we dont have to pass the entire class
-		struct WindowData
-		{
-			std::string Title;
-			unsigned int Width, Height;
-			bool VSync;
+        // Window attributes
+        inline void SetEventCallback(const EventCallbackFn &callback) override { m_Data.EventCallback = callback; }
+        void SetVSync(bool enabled) override;
+        bool IsVSync() const override;
 
-			EventCallbackFn EventCallback;
-		};
+    private:
+        virtual void Init(const WindowProps &props);
+        virtual void Shutdown();
 
-		WindowData m_Data;
-	};
+    private:
+        GLFWwindow *m_Window;
 
-}
+        //used to pass data around about window so we dont have to pass the entire class
+        struct WindowData {
+            std::string Title;
+            unsigned int Width, Height;
+            bool VSync;
 
+            EventCallbackFn EventCallback;
+        };
+
+        WindowData m_Data;
+    };
+
+}// namespace Hazel
