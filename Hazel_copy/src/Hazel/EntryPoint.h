@@ -3,6 +3,7 @@
 
 #ifdef HZ_PLATFORM_WINDOWS
 
+//user defines application
 extern Hazel::Application* Hazel::CreateApplication();
 
 int main(int argc, char** argv) {

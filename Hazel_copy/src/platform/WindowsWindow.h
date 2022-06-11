@@ -27,6 +27,7 @@ namespace Hazel {
 	private:
 		GLFWwindow* m_Window;
 
+		//used to pass data around about window so we dont have to pass the entire class
 		struct WindowData
 		{
 			std::string Title;

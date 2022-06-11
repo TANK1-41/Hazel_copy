@@ -30,6 +30,8 @@ namespace Hazel {
 		EventCategoryMouseButton = BIT(4)
 	};
 
+
+	//macros are used to fill in some functions for the event class
 #define EVENT_CLASS_TYPE(type) static EventType GetStaticType() { return EventType::##type; }\
 								virtual EventType GetEventType() const override { return GetStaticType(); }\
 								virtual const char* GetName() const override { return #type; }
