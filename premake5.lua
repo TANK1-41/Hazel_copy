@@ -13,9 +13,11 @@ outputdir = "%{cfg.build}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 IncludeDir["GLFW"] = "Hazel_copy/vender/GLFW/include"
 IncludeDir["Glad"] = "Hazel_copy/vender/Glad/include"
+IncludeDir["ImGUi"] = "Hazel_copy/vender/imgui/include"
 
 include "Hazel_copy/vender/GLFW"
 include "Hazel_copy/vender/Glad"
+include "Hazel_copy/vender/imgui"
 
 project "Hazel_copy"
 	location "Hazel_copy"
@@ -39,11 +41,13 @@ project "Hazel_copy"
 		"%{prj.name}/vender/spdlog/include",
 		"%{prj.name}/src",
 		"%{IncludeDir.GLFW}",
-		"%{IncludeDir.Glad}"
+		"%{IncludeDir.Glad}",
+		"%{IncludeDir.ImGUi}"
 	}
 
 	links{
 		"GLFW",
+		"ImGUi",
 		"Glad",
 		"opengl32.lib"
 	}
