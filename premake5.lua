@@ -13,7 +13,7 @@ outputdir = "%{cfg.build}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 IncludeDir["GLFW"] = "Hazel_copy/vender/GLFW/include"
 IncludeDir["Glad"] = "Hazel_copy/vender/Glad/include"
-IncludeDir["ImGUi"] = "Hazel_copy/vender/imgui/include"
+IncludeDir["ImGUi"] = "Hazel_copy/vender/imgui"
 
 include "Hazel_copy/vender/GLFW"
 include "Hazel_copy/vender/Glad"
