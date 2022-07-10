@@ -87,6 +87,6 @@ namespace Hazel
             return ss.str();
         }
 
-        EVENT_CLASS_TYPE(MouseButtonPressed)
+        EVENT_CLASS_TYPE(MouseButtonReleased)
     };
 }// namespace Hazel

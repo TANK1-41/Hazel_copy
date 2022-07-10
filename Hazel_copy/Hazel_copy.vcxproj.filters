@@ -13,6 +13,9 @@
     <Filter Include="platform">
       <UniqueIdentifier>{4A63C33C-3630-1E48-5F49-0CF04B7553D6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="platform\OpenGL">
+      <UniqueIdentifier>{3E351A86-AAC0-874A-B3D1-0A3F1FDCE34A}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Hazel.h" />
@@ -53,10 +56,15 @@
       <Filter>Hazel</Filter>
     </ClInclude>
     <ClInclude Include="src\hzpch.h" />
-    <ClInclude Include="src\platform\OpenGL\imgui_impl_opengl3.h" />
-    <ClInclude Include="vender\imgui\backends\imgui_impl_opengl3_loader.h" />
-    <ClInclude Include="src\platform\WindowsWindow.h" />
-    <ClInclude Include="src\platform\OpenGL\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="src\platform\OpenGL\imgui_impl_opengl3.h">
+      <Filter>platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform\OpenGL\imgui_impl_opengl3_loader.h">
+      <Filter>platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform\WindowsWindow.h">
+      <Filter>platform</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Hazel\Application.cpp">
@@ -75,7 +83,11 @@
       <Filter>Hazel</Filter>
     </ClCompile>
     <ClCompile Include="src\hzpch.cpp" />
-    <ClCompile Include="src\platform\OpenGL\imgui_impl_opengl3.cpp" />
-    <ClCompile Include="src\platform\WindowsWindow.cpp" />
+    <ClCompile Include="src\platform\OpenGL\imgui_impl_opengl3.cpp">
+      <Filter>platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\WindowsWindow.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

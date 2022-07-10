@@ -27,7 +27,7 @@ namespace Hazel
         EventDispatcher dispatcher(e);
         dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
 
-        //HZ_CORE_TRACE("{0}", e);
+        HZ_CORE_TRACE("{0}", e);
 
         for (auto it = m_LayerStack.end(); it != m_LayerStack.begin();)
         {
@@ -47,7 +47,6 @@ namespace Hazel
     {
         m_LayerStack.pushOverlay(overlay);
         overlay->OnAttach();
-
     }
 
     bool Application::OnWindowClose(WindowCloseEvent &e)
@@ -73,7 +72,6 @@ namespace Hazel
                 layer->OnUpdate();
 
             m_Window->OnUpdate();
-
         }
     }
 
