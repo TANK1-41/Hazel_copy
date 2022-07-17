@@ -61,7 +61,7 @@ project "Hazel_copy"
 		{
 			"HZ_PLATFORM_WINDOWS",
 			"HZ_BUILD_DLL",
-			"GLFW_INCLUDE_NONE"
+			"GLFW_INCLUDE_NONE",
 		}
 
 		postbuildcommands
