@@ -1,5 +1,6 @@
 workspace "Hazel_copy"
 	architecture"x64"
+	startproject "Sandbox"
 
 	configurations
 	{
@@ -15,9 +16,13 @@ IncludeDir["GLFW"] = "Hazel_copy/vender/GLFW/include"
 IncludeDir["Glad"] = "Hazel_copy/vender/Glad/include"
 IncludeDir["ImGUi"] = "Hazel_copy/vender/imgui"
 
-include "Hazel_copy/vender/GLFW"
-include "Hazel_copy/vender/Glad"
-include "Hazel_copy/vender/imgui"
+group "Dependencies"
+	include "Hazel_copy/vender/GLFW"
+	include "Hazel_copy/vender/Glad"
+	include "Hazel_copy/vender/imgui"
+group ""
+
+
 
 project "Hazel_copy"
 	location "Hazel_copy"
