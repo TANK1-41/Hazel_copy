@@ -35,6 +35,6 @@ public:
 
 Hazel::Application *Hazel::CreateApplication()
 {
-    //by creating a divrived class of application we can create a new application
+    //by creating a derived class of application we can create a new application
     return new Sandbox();
 }
